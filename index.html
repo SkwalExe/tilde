@@ -33,34 +33,22 @@
     commandPathDelimiter: '/',
     commandSearchDelimiter: ' ',
     defaultSearchTemplate: 'https://duckduckgo.com/?q={}',
-    openLinksInNewTab: true,
+    openLinksInNewTab: false,
     suggestionLimit: 4,
   };
 
   // prettier-ignore
   const COMMANDS = new Map([
-    ['a', { name: 'Chat', suggestions: ['a/claude', 'a/gemini'], url: 'https://chatgpt.com' }],
-    ['a/claude', { url: 'https://claude.ai/new' }],
-    ['a/gemini', { url: 'https://gemini.google.com/app' }],
-    ['b', { name: 'Dribbble', searchTemplate: '/search/{}', url: 'https://dribbble.com/shots/recent' }],
-    ['c', { name: 'Calendar', url: 'https://calendar.google.com' }],
-    ['d', { name: 'Drive', url: 'https://drive.google.com/drive/u/0/my-drive' }],
-    ['f', { name: 'Figma', url: 'https://www.figma.com' }],
+    ['a', { name: 'Chat', url: 'https://chatgpt.com' }],
+    ['c', { name: 'Calendar', url: 'https://ksuite.infomaniak.com/calendar/?view=week' }],
+    ['x', { name: 'Proxmox', url: 'https://artemis.skwal.net/' }],
+    ['w', { name: 'Webmail', url: 'https://mail.skwal.net/SOGo/' }],
+    ['b', { name: 'Beszel', url: 'https://beszel.skwal.net/' }],
     ['g', { name: 'GitHub', searchTemplate: '/search?q={}', url: 'https://github.com' }],
-    ['k', { name: 'Keep', url: 'https://keep.google.com' }],
-    ['n', { name: 'Notion', url: 'https://www.notion.so' }],
-    ['p', { name: 'Proton', searchTemplate: '/u/0/all-mail#keyword={}', suggestions: ['p/drive'], url: 'https://mail.proton.me/u/0/inbox' }],
-    ['p/drive', { url: 'https://drive.proton.me/u/0/' }],
-    ['r', { name: 'Reddit', searchTemplate: '/search/?q={}', suggestions: ['r/r/selfhosted', 'r/r/dataisbeautiful', 'r/r/fujix', 'r/r/leetcode'], url: 'https://reddit.com' }],
-    ['s', { name: 'Supabase', url: 'https://supabase.com/dashboard/projects' }],
-    ['v', { name: 'Vercel', url: 'https://vercel.com/dashboard' }],
-    ['x', { name: 'xvvvyz', suggestions: ['x/pomo', 'x/torrent'], url: 'https://xvvvyz.xyz' }],
-    ['x/pomo', { url: 'https://pomodoro.xvvvyz.xyz' }],
-    ['x/torrent', { url: 'https://torrent.xvvvyz.xyz' }],
     ['y', { name: 'YouTube', searchTemplate: '/results?search_query={}', url: 'https://youtube.com/feed/subscriptions' }],
-    ['0', { name: 'local', suggestions: ['0:54323', '0:54324'], url: 'http://localhost:3000' }],
-    ['0:54323', { url: 'http://localhost:54323' }],
-    ['0:54324', { url: 'http://localhost:54324' }],
+    ['0', { name: 'local', suggestions: ['0:5173', '0:8000'], url: 'http://localhost:3000' }],
+    ['0:5173', { url: 'http://localhost:5173' }],
+    ['0:8000', { url: 'http://localhost:8000' }],
   ]);
 </script>
 
